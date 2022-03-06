@@ -1,0 +1,76 @@
+import { Feeds, FeedType } from './feed.dto'
+
+export const feed: Feeds = [
+  {
+    id: '1',
+    feedType: FeedType.Restaurant,
+    restaurantName: 'Chicken Chester',
+    type: 'Cafe & Restaurant',
+    restaurantLogo: require('../../assets/images/feed/restaurant-avatar-1.png'),
+    postedTime: '2 days ago',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eros est, blandit eu nunc sit amet',
+    image: require('../../assets/images/feed/feed-13-image.png'),
+    likesCount: '32K',
+    sharesCount: '12.3K',
+    commentsCount: '597',
+    comments: [
+      {
+        id: '1',
+        userName: 'Jaxson Schleifer',
+        avatar: require('../../assets/images/feed/people-avatar-2.png'),
+        postedTime: '1h',
+        comment: 'Lorem ipsum',
+        likesCount: '2',
+      },
+    ],
+  },
+  {
+    id: '2',
+    feedType: FeedType.UserShareItems,
+    user: {
+      userName: 'Rayna Rosser',
+      verified: true,
+      userAvatar: require('../../assets/images/feed/people-avatar-3.png'),
+    },
+    postedTime: '2 days ago',
+    images: [
+      require('../../assets/images/feed/feed-2-image-1.png'),
+      require('../../assets/images/feed/feed-2-image-2.png'),
+      require('../../assets/images/feed/feed-2-image-3.png'),
+    ],
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eros est, blandit eu nunc sit amet',
+    items: 'Chicken MACDO, Carmel Sandae, Fri.. ',
+    restaurantName: "Mcdonald's",
+    restaurantLogo: require('../../assets/images/feed/restaurant-avatar-2.png'),
+    likesCount: '32K',
+    sharesCount: '12.3K',
+    commentsCount: '597',
+  },
+  {
+    id: '3',
+    feedType: FeedType.UserShareUser,
+    user: {
+      userName: 'Skylarani Arcand',
+      verified: false,
+      userAvatar: require('../../assets/images/feed/people-avatar-4.png'),
+    },
+    postedTime: '1 sec ago',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eros est, blandit eu nunc sit amet',
+    sharedFeed: {
+      user: {
+        userName: 'Rayna Rhiel Madsen',
+        verified: true,
+        userAvatar: require('../../assets/images/feed/people-avatar-5.png'),
+      },
+      image: require('../../assets/images/feed/feed-13-image.png'),
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eros est, blandit eu nunc sit amet',
+      restaurantName: 'Chicken Chester',
+      restaurantLogo: require('../../assets/images/feed/restaurant-avatar-1.png'),
+      items: 'Buy 2 Chicken Burger Combo and 2..',
+      postedTime: '2 days ago',
+    },
+    likesCount: '32K',
+    sharesCount: '12.3K',
+    commentsCount: '597',
+  },
+]
